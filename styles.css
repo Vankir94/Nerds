@@ -1,0 +1,14 @@
+body {
+    min-width: 1160px;
+    margin: 0;
+}
+
+.top-panel img {
+    margin-top: 48.98px;
+    margin-left: 140px;
+}
+
+.top-panel-list {
+    list-style: none;
+    
+}
