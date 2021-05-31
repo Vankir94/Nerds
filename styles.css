@@ -32,21 +32,27 @@ li {
     list-style: none;
 }
 
+.container {
+    max-width: 1157px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .top-panel {
-    margin-left: 140px;
-    margin-right: 140px;
+    padding-top: 30px;
     font-weight: 500;
+    font-size: 16px;
     line-height: 30px;
+    text-transform: uppercase;
     color: #000000;
     display: flex;
-    text-transform: uppercase;
+    align-items: center;
 }
 
 .top-panel-list {
-    margin-left: 202px;
-    margin-right: 285px;
-    margin-top: 75px;
     display: flex;
+    margin-left: 202px;
+    margin-right: 245px;
 }
 
 .top-panel-list li {
@@ -58,53 +64,68 @@ li {
 }
 
 .basket-link {
-    margin-top: 75px;
-}
-
-.top-panel img {
-    margin-top: 49px;
+    padding-left: 40px;
+    background-image: url(https://i.yapx.ru/MfP0i.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    
 }
 
 .features {
-    margin-left: 140px;
-    margin-right: 143px;
-    padding-top: 78px;
-    padding-bottom: 80px;
+    padding: 80px 0;
+    background-image: url(https://i.yapx.ru/MfCC7.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
 }
 
-.features-container span {
+.features span {
     font-weight: 500;
     font-size: 55px;
     line-height: 55px;
     color: #000000;
+    display: block;
 }
 
-.features-container p {
+.features p {
     margin-top: 25px;
+    margin-bottom: 38px;
 }
 
 .features-button {
-    width: 240px;
-    height: 50px;
-    margin-top: 38px;
-    font-weight: 300;
+    padding: 15px 54px;
+    font-weight: 500;
     font-size: 16px;
     line-height: 18px;
-    align-items: center;
-    text-align: center;
-    color: #FFFFFF;
+    text-transform: uppercase;
     background: #FB565A;
     border-radius: 3px;
-    display: flex;
-    text-transform: uppercase;
-    justify-content: center;
+    color: #FFFFFF;;
 }
 
-.features-picture {
-    width: 760px;
-    height: 431px;
-    left: 537px;
-    top: 112px;
-    position: absolute;
-    background-image: url(https://i.yapx.ru/MfCC7.png);
+.dots {
+    width: 88px;
+    height: 18px;
+    margin-left: 536px;
+    margin-bottom: 17px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dot {
+    width: 18px;
+    height: 18px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot-active {
+    width: 5px;
+    height: 5px;
+    border: 2px solid #C1C1C1;
+    border-radius: 50%;
+    
 }
