@@ -1,11 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nerds</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <nav class="top-panel">
+                <img src="image\nerds-logo.svg" alt="Логотип nerds" width="159" height="65">
+                <ul class="top-panel-list">
+                    <li><a href="#">Студия</a></li>
+                    <li><a href="#">Клиенты</a></li>
+                    <li><a href="#">Магазин</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <span class="basket-link"><a href="#">Корзина</a></span>
+            </nav>
+            <div class="feature">
+                <span>Долго, дорого,<br>скрупулезно.</span>
+                <p>Математически выверенный дизайн <br>для вашего сайта или мобильного приложения.</p>
+                <a class="feature-button" href="#">узнать больше</a> 
+                <div class="feature-picture"></div>
+                <div class="dots">
+                    <div class="dot active"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="services">
+            <div class="services-item">
+                <img class="services-item-picture" src="image\illustration-1 1.jpg">
+                <h3>Веб-сайты</h3>
+                <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+                <button class="services-item-btn btn-red">Заказать</button>
+            </div>
+            <div class="services-item">
+                <img class="services-picture" src="image\illustration-2 1.jpg" >
+                <h3>Приложения</h3>
+                <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+                <button class="services-item-btn btn-green">Заказать</button>
+            </div>
+            <div class="services-item">
+                <img class="services-picture" src="image\illustration-3 1.jpg" >
+                <h3>Презентации</h3>
+                <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+                <button class="services-item-btn btn-yellow">Заказать</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="company">
+            <div class="about-us">
+                <span>Мы — маленькая, но гордая <br> дизайн-студия из Краснодара.</span>
+                <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет <br> превыше креатива. Работаем не покладая рук, как роботы.</p>
+                <h3>Выполняем заказы на разработку:</h3>
+                <ul class="about-us-list">
+                    <li>Веб-сайтов любой сложности</li>
+                    <li>Мобильных приложений для iOS и Android</li>
+                    <li>Слайдшоу и видео для корпоративных презентаций</li>
+                </ul>
+            </div>
+            <div class="credo">
+                <img src="image\nerds-illustration 1.png">
+                <p>с 2004 года Любим точность во всем:</p>
+                <ul class="credo-list">
+                    <li class="credo-item"><span class="number">146</span><span class="percent">%</span>Уровень самоотдачи</li>
+                    <li class="credo-item"><span class="number">100</span><span class="percent">%</span>Соблюдение сроков</li>
+                    <li class="credo-item"><span class="number">50</span><span class="percent">%</span>Минимальная предоплата</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="customers">
+            <div><img src="image\img\logo_htmlacademy 1.png"></div>
+            <div><img src="image\img\logo-2 1.png"></div>
+            <div><img src="image\img\logo-3 1.png"></div>
+            <div><img src="image\img\logo-4 1.png"></div>
+        </div>
+    </div>
 </body>
 </html>
