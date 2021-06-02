@@ -277,7 +277,7 @@ button {
     top: 0;
 }
 
-/*3я секция  border-bottom: 1px solid #eee; */
+/*3я секция  */
 
 .customers {
     padding: 50px 0;
@@ -295,4 +295,115 @@ button {
 
 .customers div:first-child {
     border-left: none;
+}
+
+/*4я секция*/
+
+.contacts {
+    width: 1440px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.contact {
+    margin-bottom: 70px;
+    position: relative;
+    display: flex;
+    background-image: url(https://i.yapx.ru/MgOd6.jpg);
+}
+
+.contact-studio {
+    width: 320px;
+    margin-left: 140px;
+    margin-top: 54px;
+    margin-bottom: 54px;
+    background: #FFFFFF;
+    
+}
+
+.contact-studio h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 22px;
+}
+
+.contact-studio p {
+    margin-bottom: 12px;
+    margin-left: 50px;
+    line-height: 18px;
+    color: #666666;
+}
+
+.contact-studio span {
+    margin-left: 50px;
+    margin-bottom: 37px;
+    line-height: 18px;
+    color: #666666;
+    display: block;
+}
+
+.contact-studio button {
+    padding: 16px 44px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #FB565A;
+    border-radius: 3px;
+}
+
+.contact-map-market {
+    margin-left: 388px;
+    margin-top: 70px;
+}
+
+/*footer*/
+
+.footer {
+    padding-bottom: 70px;
+    display: flex;
+}
+
+.footer-application {
+    width: 270px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-application div {
+    width: 81px;
+    height: 81px;
+    text-align: center;
+    position: relative;
+    border-radius: 50%;
+    background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
+}
+
+.footer-application img{
+    position: absolute;
+    bottom: 40%;
+    transform: translateX(-50%);
+}
+
+.footer-discount {
+    width: 660px;
+    margin-left: 140px;
+}
+
+.footer-discount p {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    color: black;
+}
+
+.footer-discount  span{
+    margin-top: 10px;
+    line-height: 22px;
+    color: #444444;
+    display: block;
 }
