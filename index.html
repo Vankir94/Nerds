@@ -82,10 +82,10 @@
     </div>
     <div class="container">
         <div class="customers">
-            <div><a href="#"><img src="image\img\logo_htmlacademy 1.png"></a></div>
-            <div><a href="#"><img src="image\img\logo-2 1.png"></a></div>
-            <div><a href="#"><img src="image\img\logo-3 1.png"></a></div>
-            <div><a href="#"><img src="image\img\logo-4 1.png"></a></div>
+            <div><a href="#"><img src="image\img\logo_htmlacademy 2.png"></a></div>
+            <div><a href="#"><img src="image\img\logo-2 2.png"></a></div>
+            <div><a href="#"><img src="image\img\logo-3 2.png"></a></div>
+            <div><a href="#"><img src="image\img\logo-4 2.png"></a></div>
         </div>
     </div>
     <div class="contacts">
@@ -94,9 +94,30 @@
                 <h3>NЁRDS DESIGN STUDIO</h3>
                 <p>наб. Реки Карповки,<br>5 лит П, Санкт-Петербург</p>
                 <span>+7 800 555-86-28</span>
-                <button>Напишите нам</button>
+                <button class="btn-popup">Напишите нам</button>
             </div>
             <div class="contact-map-market"><img src="image\map-marker 1.svg"></div>
+            <div class="popup">
+                <button class="popup-close"><img src="image\svg\Vector.svg" ></button>
+                <form class="popup-form">
+                    <h2 class="popup-form-title">Напишите нам</h2>
+                    <div class="popup-form-wrapper">
+                        <p class="popup-form-text">
+                            <label class="form-text">Ваше имя:</label>
+                            <input class="form-input" type="text" placeholder="Имя Фамилия">
+                        </p>
+                        <p class="popup-form-text">
+                            <label class="form-text">Ваш email:</label>
+                            <input class="form-input" type="text" placeholder="email@example.com">
+                        </p>
+                    </div>
+                    <p class="popup-form-text">
+                        <label class="form-text">Текст письма:</label>
+                        <textarea class="form-input" type="text" placeholder="В свободной форме"></textarea>
+                    </p>
+                    <button class="popup-btn">Отправить</button>
+                </form>
+            </div>
         </div>
     </div>
     <footer>
@@ -114,5 +135,6 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

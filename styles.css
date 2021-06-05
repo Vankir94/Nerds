@@ -33,7 +33,9 @@ li {
 
 button {
     border: none;
+    cursor: pointer; 
 }
+
 .container {
     width: 1157px;
     margin: 0 auto;
@@ -58,8 +60,16 @@ button {
     margin-left: 45px;
 }
 
+.top-panel-list a:hover {
+    color: #FB565A;
+}
+
 .top-panel-list li:first-child {
     margin-left: 0;
+}
+
+.top-panel img:hover {
+    opacity: 0.7;
 }
 
 .basket-link {
@@ -68,6 +78,10 @@ button {
     background-repeat: no-repeat;
     background-position: left;
     
+}
+
+.basket-link a:hover {
+    color: #FB565A;
 }
 
 .feature {
@@ -100,7 +114,11 @@ button {
     text-transform: uppercase;
     background: #FB565A;
     border-radius: 3px;
-    color: #FFFFFF;;
+    color: #FFFFFF;
+}
+
+.feature-button:hover {
+    background: #E74246;
 }
 
 .dots {
@@ -171,12 +189,24 @@ button {
     background: #FB565A;
 }
 
+.btn-red:hover {
+    background: #E74246;
+}
+
 .btn-green {
     background: #00CA74;
 }
 
+.btn-green:hover {
+    background: #00BC6C;
+}
+
 .btn-yellow {
     background: #EFC849;
+}
+
+.btn-yellow {
+    background: #EAB534;
 }
 
 /*2я секция*/
@@ -292,6 +322,11 @@ button {
     width: 290px;
     text-align: center;
     border-left: 1px solid #eee;
+    opacity: 0.2;
+}
+
+.customers div:hover {
+    opacity: 1;
 }
 
 .customers div:first-child {
@@ -304,13 +339,14 @@ button {
     width: 1440px;
     margin: 0 auto;
     margin-top: 80px;
+    background-image: url(https://i.yapx.ru/MgOd6.jpg);
 }
 
 .contact {
     margin-bottom: 70px;
     position: relative;
     display: flex;
-    background-image: url(https://i.yapx.ru/MgOd6.jpg);
+    
 }
 
 .contact-studio {
@@ -384,6 +420,10 @@ button {
     background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
 }
 
+.footer-application div:hover {
+    background: linear-gradient(0deg, #E74246, #E74246), #FFFFFF;
+}
+
 .footer-application img{
     position: absolute;
     bottom: 40%;
@@ -407,4 +447,102 @@ button {
     line-height: 22px;
     color: #444444;
     display: block;
+}
+
+
+/*popup */
+
+.popup {
+    width: 960px;
+    padding: 70px 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    display: none;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: fadeIn;
+}
+
+.popup-form {
+    position: relative;
+}
+
+.popup-form-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+.popup-form-title {
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 53px;
+    color: #000000;
+}
+
+.popup-form-text {
+    width: 360px;
+    width: 100%;
+    display: inline-block;
+}
+
+input,
+label {
+    display: block;
+}
+
+.form-text {
+    margin-bottom: 9px;
+    font-weight: bold;
+    line-height: 18px;
+    color: #000000;
+}
+
+.form-input {
+    width: 100%;
+    padding: 16px;
+    background: #FFFFFF;
+    border: 2px solid #D7DCDE;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.popup-form-text textarea {
+    resize: none;
+    height: 120px;
+    overflow: auto;
+}
+
+.popup-btn {
+    padding: 16px 83px;
+    margin-top: 64px;
+    background: #FB565A;
+    border-radius: 3px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.popup_open {
+    display: block;
+}
+
+.popup-close {
+    padding: 0;
+    margin-top: 50px;
+    margin-left: 760px;
+    position: absolute;
+    background-color: transparent;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
