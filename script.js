@@ -14,10 +14,27 @@ clos.addEventListener('click', () => {
 
 let slides = document.querySelectorAll('#slides .slide');
 let currentSlide = 0;
-let slideInterval = setInterval(nextSlide,4000);
+let slideInterval = setInterval(nextSlide, 4000);
 
 function nextSlide() {
     slides[currentSlide].className = 'slide';
     currentSlide = (currentSlide+1)%slides.length;
     slides[currentSlide].className = 'slide showing';
 }
+
+//map
+
+let map;
+let marker;
+function initMap () {
+    map = new ymaps.Map("yandexmap", {
+        center: [59.968693, 30.311805],
+        zoom: 16
+    });
+    marker = new ymaps.Placemark([59.968322, 30.317359], {
+        hintContent: 'Нёрдс',
+        balloonContent: 'Это наша организация'
+    });
+    map.geoObjects.add(marker);
+}
+ymaps.ready(initMap);

@@ -339,7 +339,7 @@ button {
     width: 1440px;
     margin: 0 auto;
     margin-top: 80px;
-    background-image: url(https://i.yapx.ru/MgOd6.jpg);
+    position: relative;
 }
 
 .contact {
@@ -352,10 +352,11 @@ button {
 .contact-studio {
     width: 320px;
     margin-left: 140px;
-    margin-top: 54px;
+    margin-top: 70px;
     margin-bottom: 54px;
     background: #FFFFFF;
-    
+    z-index: 1;
+    position: absolute;
 }
 
 .contact-studio h3 {
@@ -391,6 +392,10 @@ button {
     color: #FFFFFF;
     background: #FB565A;
     border-radius: 3px;
+}
+
+.btn-popup:hover {
+    background: #E74246;
 }
 
 .contact-map-market {
@@ -526,8 +531,13 @@ label {
     color: white;
 }
 
+.popup-btn:hover {
+    background: #E74246;
+}
+
 .popup_open {
     display: block;
+    z-index: 1;
 }
 
 .popup-close {
@@ -536,6 +546,11 @@ label {
     margin-left: 760px;
     position: absolute;
     background-color: transparent;
+    opacity: 0.3;
+}
+
+.popup-close:hover {
+    opacity: 1;
 }
 
 @keyframes fadeIn {
@@ -575,4 +590,18 @@ label {
 
 #slide3 {
     background-image: url(https://i.yapx.ru/MkHYr.png);
+}
+
+#yandexmap {
+    position: absolute;
+}
+
+.ymap{
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+
+footer {
+    margin-top: 500px;
 }
