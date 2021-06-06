@@ -26,15 +26,23 @@ function nextSlide() {
 
 let map;
 let marker;
+
 function initMap () {
     map = new ymaps.Map("yandexmap", {
         center: [59.968693, 30.311805],
-        zoom: 16
+        zoom: 16,
+        controls: [],
+        behaviors: ["drag"],
     });
     marker = new ymaps.Placemark([59.968322, 30.317359], {
         hintContent: 'Нёрдс',
         balloonContent: 'Это наша организация'
+    }, {
+        iconLayout: 'default#imageWithContent',
+        iconImageHref: './image/map-marker_1.png',
+        iconImageSize: [231, 190],
+        iconImageOffset: [-50, -190]
     });
-    map.geoObjects.add(marker);
+    console.log(map.geoObjects.add(marker)); 
 }
 ymaps.ready(initMap);

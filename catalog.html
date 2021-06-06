@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nerds-catalog</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="catalog.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="top-panel">
+                <img src="image\nerds-logo.svg" alt="Логотип nerds" width="159" height="65">
+                <ul class="top-panel-list">
+                    <li><a href="#">Студия</a></li>
+                    <li><a href="#">Клиенты</a></li>
+                    <li><a href="#">Магазин</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <span class="basket-link"><a href="#">Корзина</a></span>
+            </nav>
+            <h2 class="slogon-catalog">Магазин готовых шаблонов</h2>
+        </div>
+    </header>
+    <div class="contacts">
+        <div class="contact">
+            <div class="ymap"><div id="yandexmap" style="width: 1440px; height: 400px;"></div></div>
+            <div class="contact-studio">
+                <h3>NЁRDS DESIGN STUDIO</h3>
+                <p>наб. Реки Карповки,<br>5 лит П, Санкт-Петербург</p>
+                <span>+7 800 555-86-28</span>
+                <button class="btn-popup">Напишите нам</button>
+            </div>
+            <div class="popup">
+                <button class="popup-close"><img src="image\Shape (2).svg" ></button>
+                <form class="popup-form">
+                    <h2 class="popup-form-title">Напишите нам</h2>
+                    <div class="popup-form-wrapper">
+                        <p class="popup-form-text">
+                            <label class="form-text">Ваше имя:</label>
+                            <input class="form-input" type="text" placeholder="Имя Фамилия">
+                        </p>
+                        <p class="popup-form-text">
+                            <label class="form-text">Ваш email:</label>
+                            <input class="form-input" type="text" placeholder="email@example.com">
+                        </p>
+                    </div>
+                    <p class="popup-form-text">
+                        <label class="form-text">Текст письма:</label>
+                        <textarea class="form-input" type="text" placeholder="В свободной форме"></textarea>
+                    </p>
+                    <button class="popup-btn">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="footer-application">
+                    <a href="#"><div><img src="image\svg\vk.svg" alt="vkontakte"></div></a>
+                    <a href="#"><div><img src="image\svg\f.svg" alt="Facebook"></div></a>
+                    <a href="#"><div><img src="image\svg\insta-icon.svg" alt="instagram"></div></a>
+                </div>
+                <div class="footer-discount">
+                    <p>Давайте дружить, это выгодно!</p>
+                    <span>Скидка 10% для друзей из социальных сетей.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -336,24 +336,25 @@ button {
 /*4я секция*/
 
 .contacts {
-    width: 1440px;
-    margin: 0 auto;
+    min-width: 1158px;
     margin-top: 80px;
+    margin-bottom: 70px;
     position: relative;
 }
 
 .contact {
-    margin-bottom: 70px;
+    height: 400px;
     position: relative;
     display: flex;
-    
+
 }
 
 .contact-studio {
     width: 320px;
-    margin-left: 140px;
-    margin-top: 70px;
-    margin-bottom: 54px;
+    margin-left: calc(-1158px / 2);
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
     background: #FFFFFF;
     z-index: 1;
     position: absolute;
@@ -600,8 +601,9 @@ label {
     width: 1440px;
     margin: 0 auto;
     position: relative;
+    width: 100%;
 }
 
-footer {
-    margin-top: 500px;
-}
+
+/*catalog.html */
+
