@@ -11,30 +11,31 @@ clos.addEventListener('click', () => {
 });
 
 //slider
+class Slider {
+    slides = document.querySelectorAll('#slides .slide');
 
-let slides = document.querySelectorAll('#slides .slide');
-let currentSlide = 0;
-let slideInterval = setInterval(nextSlide, 4000);
+    currentSlide = 0;
 
-function nextSlide() {
-    slides[currentSlide].className = 'slide';
-    currentSlide = (currentSlide+1)%slides.length;
-    slides[currentSlide].className = 'slide showing';
+    nextSlide() {
+        this.slides[this.currentSlide].className = 'slide';
+        this.currentSlide = (this.currentSlide + 1) % this.slides.length;
+        this.slides[this.currentSlide].className = 'slide showing';
+    }
+
+    init(config = { interval: 3000 } ) {
+        setInterval(this.nextSlide.bind(this), (typeof config === 'object') && config.interval || 3000);
+    }
 }
 
 //map
-
-let map;
-let marker;
-
 function initMap () {
-    map = new ymaps.Map("yandexmap", {
+    const map = new ymaps.Map('yandexmap', {
         center: [59.968693, 30.311805],
         zoom: 16,
         controls: [],
-        behaviors: ["drag"],
+        behaviors: ['drag'],
     });
-    marker = new ymaps.Placemark([59.968322, 30.317359], {
+    const marker = new ymaps.Placemark([59.968322, 30.317359], {
         hintContent: 'Нёрдс',
         balloonContent: 'Это наша организация'
     }, {
@@ -43,6 +44,9 @@ function initMap () {
         iconImageSize: [231, 190],
         iconImageOffset: [-50, -190]
     });
-    console.log(map.geoObjects.add(marker)); 
+
+    map.geoObjects.add(marker); 
 }
+
 ymaps.ready(initMap);
+new Slider().init(1000);
