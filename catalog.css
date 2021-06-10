@@ -1,4 +1,89 @@
+h2 {
+    margin: 0;
+    font-style: Bold;
+    font-size: 18px;
+    line-height: 30px;
+    color: black;
+    text-transform: uppercase;
+}
+
+button {
+    font-family: Roboto;
+}
+
+.slogon-catalog {
+    padding-bottom: 100px;
+    padding-top: 90px;
+    text-align: center;
+    font-style: Medium;
+    font-size: 55px;
+    color: black;
+}
+
 .content-box {
+    margin-top: 55px;
     display: flex;
     justify-content: space-between;
+}
+
+.filter-box {
+    width: 260px;
+}
+
+#range {
+    margin-top: 50px;
+    padding: 40px 0;
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.rate p {
+    margin-top: 22px;
+    margin-bottom: 60px;
+    color: #283136;
+    text-transform: uppercase;
+}
+
+.price {
+    padding: 8px 35px;
+    margin-left: 11px;
+    margin-right: 25px;
+    display: inline-block;
+    background-color: #EEEEEE;
+    border-radius: 3px;
+}
+
+.price-max {
+    padding: 8px 15px;
+    margin-right: 0px;
+}
+
+.filter-box-list {
+    margin-top: 16px;
+}
+
+.filter-box-item  {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.filter-box-item label {
+    margin-left: 10px;
+}
+
+#rubber {
+    margin-bottom: 30px;
+}
+
+.filter-box-btn {
+    margin-top: 30px;
+    padding: 16px 90px;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 18px;
+    color: black;
+    text-transform: uppercase;
 }
